@@ -1,4 +1,4 @@
-export interface InputCreateProductDto {
+export interface InputCreateProductDto {    
     name: string;
     price: number;
 }
