@@ -45,13 +45,13 @@ describe("Product unit test", () => {
 
     });
     
-    it("should throw error when name is empty and id is empty", () => {
+     it("should throw error when name is empty and id is empty", () => {
 
         expect(() => {
             const product = new Product("", "", 10);
         }).toThrowError("product: Id is required,product: Name is required");
 
-    })    
+    });
       
   
 });

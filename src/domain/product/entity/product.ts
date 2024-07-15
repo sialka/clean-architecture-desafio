@@ -1,6 +1,7 @@
 import ProductInterface from "./product.interface";
 import Entity from "../../@shared/entity/entity.abstract";
 import NotificationError from "../../@shared/notification/notification.error";
+import ProductValidatorFactory from "../factory/product.factory.validator";
 
 export default class Product extends Entity implements ProductInterface{
     
@@ -37,6 +38,7 @@ export default class Product extends Entity implements ProductInterface{
         this.validate();
     }    
 
+    /*
     validate(): boolean {
         if (this._id.length === 0) {
             this.notification.addError({
@@ -60,5 +62,10 @@ export default class Product extends Entity implements ProductInterface{
             //throw new Error("Price must be greater than zero");
         }                
         return true;
+    }*/
+
+
+    validate(){
+        ProductValidatorFactory.create().validate(this); 
     }
 }
