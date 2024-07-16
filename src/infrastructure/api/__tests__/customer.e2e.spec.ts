@@ -88,7 +88,7 @@ describe("E2E test for customer", () => {
         expect(customer2.address.street).toBe("Street 2");
         
         // Fase 2
-        /*
+        
         const listResponseXML = await request(app)
         .get("/customer")
         .set("Accept", "application/xml")
@@ -109,7 +109,7 @@ describe("E2E test for customer", () => {
         expect(listResponseXML.text).toContain(`<name>Jane</name>`);
         expect(listResponseXML.text).toContain(`<street>Street 2</street>`);
         expect(listResponseXML.text).toContain(`</customers>`);
-        */
+        
     });
     
 });

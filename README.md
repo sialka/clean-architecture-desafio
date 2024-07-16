@@ -8,16 +8,17 @@
 
 📦️ **DEPENDENCIES**
 
-```bash
-npm i typescript --save-dev &&   
-npx tsc --init &&
-npm i tslint --save-dev &&#
-npx tslint --init &&
-npm i -D jest @types/jest ts-node --save-dev &&
-npm i -D @swc/jest @swc/cli @swc/core 
-npm install -S yup
+**Terminal**
 
-npx jest --init
+```bash
+$ npm i typescript --save-dev &&   
+$ npx tsc --init &&
+$ npm i tslint --save-dev &&#
+$ npx tslint --init &&
+$ npm i -D jest @types/jest ts-node --save-dev &&
+$ npm i -D @swc/jest @swc/cli @swc/core 
+
+$ npx jest --init
 
 ✔ Would you like to use Jest when running "test" script in "package.json"? … yes
 ✔ Would you like to use Typescript for the configuration file? … yes
@@ -26,9 +27,13 @@ npx jest --init
 ✔ Which provider should be used to instrument code for coverage? › v8
 ✔ Automatically clear mock calls, instances, contexts and results before every test? … yes
 
-npm i uuid @types/uuid &&
-npm i sequelize reflect-metadata sequelize-typescript &&
-npm i sqlite3
+$ npm i uuid @types/uuid &&
+$ npm i sequelize reflect-metadata sequelize-typescript &&
+$ npm i sqlite3
+
+$ npm install -S yup
+$ npm i jstoxml
+$ npm i -D @types/jstoxml
 ```
 
 ---
